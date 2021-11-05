@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/natala/CLionProjects/untitled1/hw2/neznau.cpp
+iostream
+-
+vector
+-
+cmath
+-
+fstream
+-
+string
+-
+

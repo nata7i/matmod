@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/natala/CLionProjects/untitled1/hw1/fact.cpp
+
+/Users/natala/CLionProjects/untitled1/hw1/main.cpp
+iostream
+-
+vector
+-
+cmath
+-
+fact.cpp
+/Users/natala/CLionProjects/untitled1/hw1/fact.cpp
+
