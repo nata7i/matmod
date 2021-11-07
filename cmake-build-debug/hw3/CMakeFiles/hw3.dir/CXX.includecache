@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/natala/CLionProjects/untitled1/hw2/neznau.cpp
+/Users/natala/CLionProjects/untitled1/hw3/mat_point.cpp
 iostream
 -
 vector
 -
-fstream
+cmath
 -
-string
+cstdlib
 -
 

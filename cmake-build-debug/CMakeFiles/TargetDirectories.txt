@@ -6,3 +6,6 @@
 /Users/natala/CLionProjects/untitled1/cmake-build-debug/hw2/CMakeFiles/rebuild_cache.dir
 /Users/natala/CLionProjects/untitled1/cmake-build-debug/hw2/CMakeFiles/edit_cache.dir
 /Users/natala/CLionProjects/untitled1/cmake-build-debug/hw2/CMakeFiles/hw2.dir
+/Users/natala/CLionProjects/untitled1/cmake-build-debug/hw3/CMakeFiles/rebuild_cache.dir
+/Users/natala/CLionProjects/untitled1/cmake-build-debug/hw3/CMakeFiles/edit_cache.dir
+/Users/natala/CLionProjects/untitled1/cmake-build-debug/hw3/CMakeFiles/hw3.dir

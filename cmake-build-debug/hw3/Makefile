@@ -87,14 +87,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/natala/CLionProjects/untitled1/cmake-build-debug/CMakeFiles /Users/natala/CLionProjects/untitled1/cmake-build-debug//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /Users/natala/CLionProjects/untitled1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/natala/CLionProjects/untitled1/cmake-build-debug/CMakeFiles /Users/natala/CLionProjects/untitled1/cmake-build-debug/hw3//CMakeFiles/progress.marks
+	cd /Users/natala/CLionProjects/untitled1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw3/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/natala/CLionProjects/untitled1/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/natala/CLionProjects/untitled1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw3/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,57 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/natala/CLionProjects/untitled1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw3/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/natala/CLionProjects/untitled1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw3/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/natala/CLionProjects/untitled1/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named hw1
+# Convenience name for target.
+hw3/CMakeFiles/hw3.dir/rule:
+	cd /Users/natala/CLionProjects/untitled1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw3/CMakeFiles/hw3.dir/rule
+.PHONY : hw3/CMakeFiles/hw3.dir/rule
 
-# Build rule for target.
-hw1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw1
-.PHONY : hw1
-
-# fast build rule for target.
-hw1/fast:
-	$(MAKE) $(MAKESILENT) -f hw1/CMakeFiles/hw1.dir/build.make hw1/CMakeFiles/hw1.dir/build
-.PHONY : hw1/fast
-
-#=============================================================================
-# Target rules for targets named hw2
-
-# Build rule for target.
-hw2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw2
-.PHONY : hw2
-
-# fast build rule for target.
-hw2/fast:
-	$(MAKE) $(MAKESILENT) -f hw2/CMakeFiles/hw2.dir/build.make hw2/CMakeFiles/hw2.dir/build
-.PHONY : hw2/fast
-
-#=============================================================================
-# Target rules for targets named hw3
-
-# Build rule for target.
-hw3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw3
+# Convenience name for target.
+hw3: hw3/CMakeFiles/hw3.dir/rule
 .PHONY : hw3
 
 # fast build rule for target.
 hw3/fast:
-	$(MAKE) $(MAKESILENT) -f hw3/CMakeFiles/hw3.dir/build.make hw3/CMakeFiles/hw3.dir/build
+	cd /Users/natala/CLionProjects/untitled1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f hw3/CMakeFiles/hw3.dir/build.make hw3/CMakeFiles/hw3.dir/build
 .PHONY : hw3/fast
+
+mat_point.o: mat_point.cpp.o
+.PHONY : mat_point.o
+
+# target to build an object file
+mat_point.cpp.o:
+	cd /Users/natala/CLionProjects/untitled1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f hw3/CMakeFiles/hw3.dir/build.make hw3/CMakeFiles/hw3.dir/mat_point.cpp.o
+.PHONY : mat_point.cpp.o
+
+mat_point.i: mat_point.cpp.i
+.PHONY : mat_point.i
+
+# target to preprocess a source file
+mat_point.cpp.i:
+	cd /Users/natala/CLionProjects/untitled1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f hw3/CMakeFiles/hw3.dir/build.make hw3/CMakeFiles/hw3.dir/mat_point.cpp.i
+.PHONY : mat_point.cpp.i
+
+mat_point.s: mat_point.cpp.s
+.PHONY : mat_point.s
+
+# target to generate assembly for a file
+mat_point.cpp.s:
+	cd /Users/natala/CLionProjects/untitled1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f hw3/CMakeFiles/hw3.dir/build.make hw3/CMakeFiles/hw3.dir/mat_point.cpp.s
+.PHONY : mat_point.cpp.s
 
 # Help Target
 help:
@@ -163,9 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... hw1"
-	@echo "... hw2"
 	@echo "... hw3"
+	@echo "... mat_point.o"
+	@echo "... mat_point.i"
+	@echo "... mat_point.s"
 .PHONY : help
 
 
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/natala/CLionProjects/untitled1/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

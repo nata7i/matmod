@@ -4,6 +4,7 @@
 #include <string>
 using namespace std;
 
+//дз1- самая правая/левая точка от прямой
 vector <double> read_sort (string type){
    vector <double> points; // объявили массив типа double
    ifstream file ("in.txt"); //считывание файла

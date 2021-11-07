@@ -37,6 +37,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.20.2/CMakeSystem.cmake"
   "../hw1/CMakeLists.txt"
   "../hw2/CMakeLists.txt"
+  "../hw3/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -50,10 +51,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "hw1/CMakeFiles/CMakeDirectoryInformation.cmake"
   "hw2/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "hw3/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "hw1/CMakeFiles/hw1.dir/DependInfo.cmake"
   "hw2/CMakeFiles/hw2.dir/DependInfo.cmake"
+  "hw3/CMakeFiles/hw3.dir/DependInfo.cmake"
   )

@@ -5,6 +5,7 @@
 #include "fact.cpp"
 using namespace std;
 
+//вывод вектора y=f(x)
  vector <double> func(vector <double> & arr) {
      int i=0;
     for (i=0; i<arr.size(); i++){
